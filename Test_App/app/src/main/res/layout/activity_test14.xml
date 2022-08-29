@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_menu"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".TestActivity">
+
+
+
+    <TextView
+        android:id="@+id/test_level"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView style="@style/test_activity_text"
+        android:text=""
+        android:id="@+id/test1"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test2"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test3"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test4"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test5"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test6"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test7"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test8"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test9"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test10"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test11"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test12"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test13"/>
+    <TextView style="@style/test_activity_text"
+        android:id="@+id/test14"/>
+
+</LinearLayout>

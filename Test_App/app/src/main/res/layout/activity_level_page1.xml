@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_menu">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-30dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/elementary1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Elementary I"/>
+
+            <Button
+                android:id="@+id/pre_inter_1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Pre-Intermediate I"/>
+
+            <Button
+                android:id="@+id/inter_1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Intermediate I"/>
+
+            <Button
+                android:id="@+id/elementary2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Elementary II\nPre-Intermediate II"/>
+
+            <Button
+                android:id="@+id/upper_inter1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Intermediate II\nUpper Intermediate I"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Advanced I"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/next_page"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/next"
+                />
+
+
+
+
+
+
+</FrameLayout>

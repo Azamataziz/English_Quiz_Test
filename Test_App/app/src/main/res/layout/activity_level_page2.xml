@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_menu">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+<!--    Start Left Box  -->
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/articles"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Articles"/>
+
+        <Button
+            android:id="@+id/prepositions"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Prepositions"/>
+
+        <Button
+            android:id="@+id/pronouns"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Pronouns"/>
+
+        <Button
+            android:id="@+id/present_tenses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Present Tenses"/>
+
+        <Button
+            android:id="@+id/future_tenses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Future Tenses"/>
+
+        <Button
+            android:id="@+id/past_tenses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Past Tenses"/>
+
+        <Button
+            android:id="@+id/mixed_tenses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/radius_level_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Mixed Tenses"/>
+
+    </LinearLayout>
+<!--    End Left Box    -->
+
+
+<!--    Start Right Box -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/modals"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Modals"/>
+
+            <Button
+                android:id="@+id/conditionals"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Conditionals"/>
+
+            <Button
+                android:id="@+id/comparatives"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Comparatives - Superlatives"/>
+
+            <Button
+                android:id="@+id/gerund"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Infinitive - Gerund"/>
+
+            <Button
+                android:id="@+id/passive_voice"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Passive voice"/>
+
+            <Button
+                android:id="@+id/indirect_speech"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Indirect speech"/>
+
+            <Button
+                android:id="@+id/when_while"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/radius_level_btn"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="When - while - where - as soon as"/>
+
+        </LinearLayout>
+<!--    End Right Box -->
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

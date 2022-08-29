@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3.05"
+    android:background="#E0E1DC"
+    tools:context=".MainActivity">
+
+
+
+<!--    start green background-->
+
+
+<!--    start question frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/frame_radius">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="-15dp"
+            android:background="@drawable/radius_round" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/radius_round"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|top"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/radius_round" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/radius_button_white">
+
+        <TextView
+            android:id="@+id/questions"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:minLines="3"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+<!--        correct answers-->
+
+<!--        begin order question-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-2.5dp"
+            android:layout_gravity="top|center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Question"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#673AB7"/>
+            <TextView
+                android:id="@+id/current_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="#673AB7"/>
+
+            <TextView
+                android:id="@+id/total_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="/ 15"
+                android:textSize="15dp"
+                android:layout_marginStart="3dp"
+                android:textStyle="bold"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+<!--        end order question-->
+
+        <TextView
+            android:id="@+id/correct_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+<!--        correct answers color-->
+
+
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="6.5dp"
+            android:background="@drawable/correct_back" />
+
+
+
+
+<!--        mistake answers color-->
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="7dp"
+
+                android:layout_gravity="end"
+                android:layout_marginEnd="17dp"
+                android:layout_marginTop="6.5dp"
+                android:background="@drawable/mistake_back"/>
+
+
+
+<!--        mistake answers-->
+        <TextView
+            android:id="@+id/mistake_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_gravity="end"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+<!--    end question frame-->
+
+
+<!--    start variants frame-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:background="#E0E1DC"
+        android:orientation="vertical">
+
+
+
+        <RadioGroup
+            android:id="@+id/answer_group1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5">
+
+            <RadioButton
+                android:layout_marginTop="15dp"
+                style="@style/variant_button"/>
+
+            <RadioButton
+                style="@style/variant_button"/>
+
+
+            <RadioButton
+                style="@style/variant_button"/>
+
+
+            <RadioButton
+                style="@style/variant_button"/>
+
+            <RadioButton
+                style="@style/variant_button"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+<!--    end variants frame-->
+
+
+
+
+</LinearLayout>

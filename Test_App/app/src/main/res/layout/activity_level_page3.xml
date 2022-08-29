@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_menu">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centre_line"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_line"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/articles"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Articles" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/prepositions"
+        app:layout_constraintTop_toBottomOf="@id/articles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Prepositions" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/pronouns"
+        app:layout_constraintTop_toBottomOf="@id/prepositions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Pronouns" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/present_tenses"
+        app:layout_constraintTop_toBottomOf="@id/pronouns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Present Tenses" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/past_tenses"
+        app:layout_constraintTop_toBottomOf="@id/present_tenses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Past Tenses" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/future_tenses"
+        app:layout_constraintTop_toBottomOf="@id/past_tenses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Future Tenses" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/mixed_tenses"
+        app:layout_constraintTop_toBottomOf="@id/future_tenses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/centre_line"
+        android:text="Mixed Tenses" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/modals"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_line"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Modals" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/conditionals"
+        app:layout_constraintTop_toBottomOf="@id/modals"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Conditionals" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/comparatives"
+        app:layout_constraintTop_toBottomOf="@id/conditionals"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Comparatives - Superlatives"
+        android:textSize="18sp"/>
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/gerund"
+        app:layout_constraintTop_toBottomOf="@id/comparatives"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:text="Infinitive - Gerund" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/passive_voice"
+        app:layout_constraintTop_toBottomOf="@id/gerund"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Passive voice" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/indirect_speech"
+        app:layout_constraintTop_toBottomOf="@id/passive_voice"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Indirect speech" />
+
+    <Button
+        style="@style/level_btn_style"
+        android:id="@+id/when_while"
+        app:layout_constraintTop_toBottomOf="@id/indirect_speech"
+        app:layout_constraintStart_toStartOf="@id/centre_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="14sp"
+        android:text="When - while - where\nas soon as"/>
+
+
+
+        <ImageView
+            android:id="@+id/prev_page1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/mixed_tenses"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/back1"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
